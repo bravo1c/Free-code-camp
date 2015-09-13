@@ -3,9 +3,10 @@ useful things for my learning
 
 
 // how to have a docuent ready as soon as the browser is \\
+<script>
 $(document).ready(function() {
 });
-
+</script>
 // Div's hold instructions on what the eliments iside need todo aswell as seperating the elements!!
 
 <div class="container-fluid">
