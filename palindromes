@@ -1,0 +1,21 @@
+//how strings work in java script
+
+
+function palindrome(str) {
+  // Good luck!
+  return true;
+}
+
+start of a fuction is the name and what is pointed at E.G string
+function palindrome(string) {
+//then allways start with var, followed by the .functions. this is broken into three, .tolower case to make everything lowercase
+//then .match to check for any of the same values in the string
+// then .join to remove all spaces
+
+//notice how any .funtions can be placed one after the other. all you need to know is what you need to todo and find the .function
+    var str = string.toLowerCase().match(/\w/g).join(""),
+    // the to revese the string to see if it is the same back to front
+        reverse = str.split('').reverse().join('');
+    return str === reverse;
+};
+palindrome("eye");
