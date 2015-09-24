@@ -13,9 +13,9 @@ function palindrome(string) {
 // then .join to remove all spaces
 
 //notice how any .funtions can be placed one after the other. all you need to know is what you need to todo and find the .function
-    var str = string.toLowerCase().match(/\w/g).join(""),
-    // the to revese the string to see if it is the same back to front
+ function palindrome(string) {
+        var str = string.replace(/[^A-Z0-9]/ig, "").toLowerCase(),
         reverse = str.split('').reverse().join('');
-    return str === reverse;
+    return str == reverse;
 };
 palindrome("eye");
